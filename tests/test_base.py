@@ -1,14 +1,19 @@
-"""Unit tests for the UserStreamTrackerBase scaffold placeholder."""
+"""Tests for base.py — UserStreamTrackerBase placeholder scaffold."""
 
 import pytest
 
 from user_stream_tracker.base import UserStreamTrackerBase
+
+# --- Importability ---
 
 
 @pytest.mark.unit
 def test_user_stream_tracker_base_importable() -> None:
     """UserStreamTrackerBase must be importable from user_stream_tracker.base."""
     assert UserStreamTrackerBase is not None
+
+
+# --- Construction tests ---
 
 
 @pytest.mark.unit

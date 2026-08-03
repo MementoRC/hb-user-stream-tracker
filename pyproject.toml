@@ -13,6 +13,7 @@ requires-python = ">=3.12"
 license = {text = "Apache-2.0"}
 dependencies = [
     "aiohttp",
+    "hb-logger @ git+https://github.com/MementoRC/hb-logger.git@06534b7708a13b4425a06dd154976db96c2c45be",
     "hb-web-assistant @ git+https://github.com/MementoRC/hb-web-assistant.git@9eae358291063551a6cb2ad7c93059ee7f1aca48",
 ]
 
