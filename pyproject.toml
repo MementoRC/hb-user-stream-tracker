@@ -1,0 +1,132 @@
+[build-system]
+requires = ["hatchling>=1.29.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project]
+name = "hb-user-stream-tracker"
+dynamic = ["version"]
+description = "User stream tracking abstractions for Hummingbot sub-packages — extracted from hummingbot.core.data_type.user_stream_tracker and connector user-stream implementations"
+requires-python = ">=3.12"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "aiohttp",
+    "hb-web-assistant @ git+https://github.com/MementoRC/hb-web-assistant.git@9eae358291063551a6cb2ad7c93059ee7f1aca48",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.3",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=7.1.0",
+    "pytest-timeout>=2.4.0",
+    "ruff>=0.15.10",
+    "mypy>=1.20.0",
+]
+
+[tool.hatch.version]
+path = "user_stream_tracker/__about__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["user_stream_tracker"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_functions = "test_*"
+markers = [
+    "unit: unit tests",
+    "integration: integration tests",
+]
+timeout = 300
+addopts = "--strict-markers --strict-config -v"
+
+[tool.ruff]
+target-version = "py312"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "B", "UP", "N", "SIM", "TCH", "C4"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+warn_unused_ignores = true
+
+[tool.coverage.run]
+branch = true
+source_pkgs = ["user_stream_tracker"]
+omit = ["user_stream_tracker/__about__.py"]
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
+skip_covered = true
+exclude_lines = ["no cov", "if __name__", "if TYPE_CHECKING", "raise NotImplementedError", "@overload"]
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64", "win-64"]
+
+[tool.pixi.dependencies]
+python = ">=3.12,<3.13"
+aiohttp = ">=3.9"
+
+[tool.pixi.feature.dev.dependencies]
+pytest = ">=9.0.3"
+pytest-asyncio = ">=0.21.0"
+pytest-cov = ">=7.1.0"
+pytest-timeout = ">=2.4.0"
+ruff = "=0.15.10"
+mypy = ">=1.20.0"
+pre-commit = ">=2.15.0"
+aioresponses = ">=0.7.6"
+
+[tool.pixi.feature.ci.dependencies]
+ruff = "=0.15.10"
+mypy = ">=1.20.0"
+pytest = ">=9.0.3"
+pytest-asyncio = ">=0.21.0"
+pytest-cov = ">=7.1.0"
+pytest-timeout = ">=2.4.0"
+bandit = ">=1.8.0"
+pre-commit = ">=2.15.0"
+hatchling = ">=1.18"
+aioresponses = ">=0.7.6"
+
+[tool.pixi.feature.py312.dependencies]
+python = "3.12.*"
+
+[tool.pixi.environments]
+default = { features = ["dev"], solve-group = "default" }
+ci = { features = ["ci", "dev"], solve-group = "default" }
+quality-ci = { features = ["ci", "dev"], solve-group = "default" }
+py312 = { features = ["py312", "dev"], solve-group = "py312" }
+
+[tool.pixi.tasks]
+test = "pytest tests/"
+test-unit = "pytest tests/unit/"
+test-integration = "pytest tests/integration/"
+lint = "ruff check user_stream_tracker tests"
+format = "ruff format user_stream_tracker tests"
+format-check = "ruff format --check user_stream_tracker tests"
+typecheck = "mypy user_stream_tracker"
+build = "hatchling build"
+quality = { depends-on = ["lint", "format-check"] }
+check = { depends-on = ["quality", "typecheck", "test"] }
+
+[tool.hummingbot.supersedes]
+modules = ["user_stream_tracker"]
+# TODO(Phase 1 Step 2): populate with the real connector-family user-stream-tracker
+# test paths once the ~90-96 file extraction from hummingbot connectors happens.
+test_paths = []
