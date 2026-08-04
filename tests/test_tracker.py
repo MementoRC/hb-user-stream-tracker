@@ -6,6 +6,7 @@ import asyncio
 from unittest.mock import AsyncMock, patch
 
 import pytest
+
 from user_stream_tracker.data_source import UserStreamTrackerDataSource
 from user_stream_tracker.tracker import UserStreamTracker
 
