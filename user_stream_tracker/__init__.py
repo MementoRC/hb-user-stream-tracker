@@ -1,12 +1,11 @@
 """User stream tracking abstractions.
 
-Scaffold pending Phase 1 Step 2: extraction of the connector-family user-stream-tracker
-implementations from hummingbot.core.data_type.user_stream_tracker and per-connector
-*_user_stream_tracker.py modules.
+Ported from hummingbot.core.data_type.user_stream_tracker and
+hummingbot.core.data_type.user_stream_tracker_data_source.
 """
 
 from user_stream_tracker.__about__ import __version__
+from user_stream_tracker.data_source import UserStreamTrackerDataSource
+from user_stream_tracker.tracker import UserStreamTracker
 
-__all__ = [
-    "__version__",
-]
+__all__ = ["UserStreamTracker", "UserStreamTrackerDataSource", "__version__"]

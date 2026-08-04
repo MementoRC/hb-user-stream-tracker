@@ -15,6 +15,7 @@ dependencies = [
     "aiohttp",
     "hb-logger @ git+https://github.com/MementoRC/hb-logger.git@06534b7708a13b4425a06dd154976db96c2c45be",
     "hb-web-assistant @ git+https://github.com/MementoRC/hb-web-assistant.git@9eae358291063551a6cb2ad7c93059ee7f1aca48",
+    "hb-async-utils @ git+https://github.com/MementoRC/hb-async-utils.git@e5a411e1ce9bb75191b30bc761e0306b19fabdda",
 ]
 
 [project.optional-dependencies]
@@ -128,6 +129,7 @@ check = { depends-on = ["quality", "typecheck", "test"] }
 
 [tool.hummingbot.supersedes]
 modules = ["user_stream_tracker"]
-# TODO(Phase 1 Step 2): populate with the real connector-family user-stream-tracker
-# test paths once the ~90-96 file extraction from hummingbot connectors happens.
-test_paths = []
+test_paths = [
+    "test/hummingbot/core/data_type/test_user_stream_tracker.py",
+    "test/hummingbot/core/data_type/test_user_stream_tracker_data_source.py",
+]

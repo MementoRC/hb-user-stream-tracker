@@ -1,0 +1,147 @@
+"""User stream tracker data source abstraction.
+
+Extracted from ``hummingbot.core.data_type.user_stream_tracker_data_source``.
+"""
+
+from __future__ import annotations
+
+import asyncio
+import contextlib
+import logging
+import time
+from abc import ABCMeta
+from typing import TYPE_CHECKING, Any
+
+from user_stream_tracker.hb_compat import HummingbotLogger
+
+if TYPE_CHECKING:
+    from user_stream_tracker.hb_compat import WSAssistant
+
+
+class UserStreamTrackerDataSource(metaclass=ABCMeta):  # noqa: B024
+    _logger: HummingbotLogger | None = None
+    _manage_listen_key_task: asyncio.Task[Any] | None
+
+    def __init__(self) -> None:
+        self._ws_assistant: WSAssistant | None = None
+
+    @classmethod
+    def logger(cls) -> HummingbotLogger:
+        if cls._logger is None:
+            cls._logger = logging.getLogger(HummingbotLogger.logger_name_for_class(cls))
+        return cls._logger
+
+    @property
+    def last_recv_time(self) -> float:
+        """
+        Returns the time of the last received message
+
+        :return: the timestamp of the last received message in seconds
+        """
+        if self._ws_assistant:
+            return self._ws_assistant.last_recv_time  # type: ignore[no-any-return]
+        return 0
+
+    async def listen_for_user_stream(self, output: asyncio.Queue[Any]) -> None:
+        """
+        Connects to the user private channel in the exchange using a websocket connection. With the
+        established connection listens to all balance events and order updates provided by the
+        exchange, and stores them in the output queue
+
+        :param output: the queue to use to store the received messages
+        """
+        while True:
+            try:
+                self._ws_assistant = await self._connected_websocket_assistant()
+                await self._subscribe_channels(websocket_assistant=self._ws_assistant)
+                # to update last_recv_timestamp
+                await self._send_ping(websocket_assistant=self._ws_assistant)
+                await self._process_websocket_messages(
+                    websocket_assistant=self._ws_assistant, queue=output
+                )
+            except asyncio.CancelledError:
+                raise
+            except ConnectionError as connection_exception:
+                self.logger().warning(
+                    f"The websocket connection was closed ({connection_exception})"
+                )
+            except Exception:
+                self.logger().exception(
+                    "Unexpected error while listening to user stream. Retrying after 5 seconds..."
+                )
+                await self._sleep(1.0)
+            finally:
+                await self._on_user_stream_interruption(websocket_assistant=self._ws_assistant)
+                self._ws_assistant = None
+
+    async def _connected_websocket_assistant(self) -> WSAssistant:
+        """
+        Creates an instance of WSAssistant connected to the exchange
+
+        :return: an instance of WSAssistant connected to the exchange
+        """
+        raise NotImplementedError
+
+    async def _subscribe_channels(self, websocket_assistant: WSAssistant) -> None:
+        """
+        Subscribes to the trade events and diff orders events through the provided websocket
+        connection.
+
+        :param websocket_assistant: the websocket assistant used to connect to the exchange
+        """
+        raise NotImplementedError
+
+    async def _process_websocket_messages(
+        self, websocket_assistant: WSAssistant, queue: asyncio.Queue[Any]
+    ) -> None:
+        async for ws_response in websocket_assistant.iter_messages():
+            data = ws_response.data
+            await self._process_event_message(event_message=data, queue=queue)
+
+    async def _process_event_message(
+        self, event_message: dict[str, Any], queue: asyncio.Queue[Any]
+    ) -> None:
+        if len(event_message) > 0:
+            queue.put_nowait(event_message)
+
+    async def _on_user_stream_interruption(self, websocket_assistant: WSAssistant | None) -> None:
+        websocket_assistant and await websocket_assistant.disconnect()
+
+    async def stop(self) -> None:
+        """
+        Stop the user stream data source and clean up any running tasks.
+        This method should be overridden by subclasses to handle specific cleanup logic.
+        """
+        # Cancel listen key task if it exists (for exchanges that use listen keys)
+        if hasattr(self, "_manage_listen_key_task") and self._manage_listen_key_task is not None:
+            if not self._manage_listen_key_task.done():
+                self._manage_listen_key_task.cancel()
+                with contextlib.suppress(asyncio.CancelledError):
+                    await self._manage_listen_key_task
+            self._manage_listen_key_task = None
+
+        # Clear listen key state if it exists
+        if hasattr(self, "_current_listen_key"):
+            self._current_listen_key = None
+        if hasattr(self, "_listen_key_initialized_event"):
+            self._listen_key_initialized_event.clear()
+
+        # Disconnect websocket if connected
+        if self._ws_assistant:
+            await self._ws_assistant.disconnect()
+            self._ws_assistant = None
+
+    async def _send_ping(self, websocket_assistant: WSAssistant) -> None:
+        await websocket_assistant.ping()
+
+    async def _sleep(self, delay: float) -> None:
+        """
+        Function added only to facilitate patching the sleep in unit tests without affecting the
+        asyncio module
+
+        :param delay: number of seconds to sleep
+        """
+        await asyncio.sleep(delay)
+
+    def _time(self) -> float:
+        return time.time()
