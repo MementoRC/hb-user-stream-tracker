@@ -118,6 +118,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.7.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wheel-0.47.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
@@ -205,6 +206,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ukkonen-1.1.0-py312h0aa9c5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yaml-0.2.5-h4132b18_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yarl-1.24.5-py312heb39f77_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/1c/54/1dc810ea558d1320b597aa140a514f2fdf1d2ea09c38cf556f13ea712ec9/pandas-3.0.5-cp312-cp312-macosx_10_13_x86_64.whl
@@ -293,6 +295,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py312h766f71e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yarl-1.24.5-py312h04c11ed_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/68/56/fbe81c09195924d8b7b8d4461a20458fe80a6a5ed6b24f0314da684277e1/pandas-3.0.5-cp312-cp312-macosx_11_0_arm64.whl
@@ -381,6 +384,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yarl-1.24.5-py312h05f76fc_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/65/66/53f31807a48a750f9d748da273bc3fcedd12b27ff1f3e373bfec55ef2dc0/numpy-2.5.1-cp312-cp312-win_amd64.whl
@@ -471,6 +475,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.7.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
@@ -544,6 +549,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ukkonen-1.1.0-py312h0aa9c5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yaml-0.2.5-h4132b18_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yarl-1.24.5-py312heb39f77_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/1c/54/1dc810ea558d1320b597aa140a514f2fdf1d2ea09c38cf556f13ea712ec9/pandas-3.0.5-cp312-cp312-macosx_10_13_x86_64.whl
@@ -618,6 +624,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py312h766f71e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yarl-1.24.5-py312h04c11ed_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/68/56/fbe81c09195924d8b7b8d4461a20458fe80a6a5ed6b24f0314da684277e1/pandas-3.0.5-cp312-cp312-macosx_11_0_arm64.whl
@@ -692,6 +699,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yarl-1.24.5-py312h05f76fc_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/65/66/53f31807a48a750f9d748da273bc3fcedd12b27ff1f3e373bfec55ef2dc0/numpy-2.5.1-cp312-cp312-win_amd64.whl
@@ -782,6 +790,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.7.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
@@ -855,6 +864,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ukkonen-1.1.0-py312h0aa9c5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yaml-0.2.5-h4132b18_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yarl-1.24.5-py312heb39f77_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/1c/54/1dc810ea558d1320b597aa140a514f2fdf1d2ea09c38cf556f13ea712ec9/pandas-3.0.5-cp312-cp312-macosx_10_13_x86_64.whl
@@ -929,6 +939,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py312h766f71e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yarl-1.24.5-py312h04c11ed_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/68/56/fbe81c09195924d8b7b8d4461a20458fe80a6a5ed6b24f0314da684277e1/pandas-3.0.5-cp312-cp312-macosx_11_0_arm64.whl
@@ -1003,6 +1014,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yarl-1.24.5-py312h05f76fc_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/65/66/53f31807a48a750f9d748da273bc3fcedd12b27ff1f3e373bfec55ef2dc0/numpy-2.5.1-cp312-cp312-win_amd64.whl
@@ -1107,6 +1119,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.7.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wheel-0.47.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
@@ -1194,6 +1207,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ukkonen-1.1.0-py312h0aa9c5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yaml-0.2.5-h4132b18_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yarl-1.24.5-py312heb39f77_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/1c/54/1dc810ea558d1320b597aa140a514f2fdf1d2ea09c38cf556f13ea712ec9/pandas-3.0.5-cp312-cp312-macosx_10_13_x86_64.whl
@@ -1282,6 +1296,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py312h766f71e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yarl-1.24.5-py312h04c11ed_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/68/56/fbe81c09195924d8b7b8d4461a20458fe80a6a5ed6b24f0314da684277e1/pandas-3.0.5-cp312-cp312-macosx_11_0_arm64.whl
@@ -1370,6 +1385,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yarl-1.24.5-py312h05f76fc_0.conda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
       - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
       - pypi: https://files.pythonhosted.org/packages/65/66/53f31807a48a750f9d748da273bc3fcedd12b27ff1f3e373bfec55ef2dc0/numpy-2.5.1-cp312-cp312-win_amd64.whl
@@ -3992,6 +4008,19 @@ packages:
   run_exports: {}
   size: 168243
   timestamp: 1784526541105
+- pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+  name: hb-async-utils
+  version: 0.1.0
+  requires_dist:
+  - hb-logger @ git+https://github.com/MementoRC/hb-logger.git@06534b7708a13b4425a06dd154976db96c2c45be
+  - typing-extensions>=4.0
+  - mypy>=1.20.0 ; extra == 'dev'
+  - pytest-asyncio>=0.21.0 ; extra == 'dev'
+  - pytest-cov>=7.1.0 ; extra == 'dev'
+  - pytest-timeout>=2.4.0 ; extra == 'dev'
+  - pytest>=9.0.3 ; extra == 'dev'
+  - ruff==0.15.7 ; extra == 'dev'
+  requires_python: '>=3.12'
 - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
   name: hb-logger
   version: 0.1.0
