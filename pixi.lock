@@ -118,9 +118,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.7.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wheel-0.47.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
+      - pypi: https://files.pythonhosted.org/packages/09/be/4ddd61b3d4beb21eced10d0d100a4dca26f13303d4952e48fb5e89167869/ujson-6.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b8/a9/6e73d68500f80773f65f0654ea932019d6694329a0eb0ed0533de38df376/numpy-2.5.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
@@ -206,13 +208,15 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ukkonen-1.1.0-py312h0aa9c5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yaml-0.2.5-h4132b18_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yarl-1.24.5-py312heb39f77_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
       - pypi: https://files.pythonhosted.org/packages/1c/54/1dc810ea558d1320b597aa140a514f2fdf1d2ea09c38cf556f13ea712ec9/pandas-3.0.5-cp312-cp312-macosx_10_13_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/62/7b/14687aa674250e5e546f616f486b0d56d3631cd5b2415739141ce40bdcea/numpy-2.5.1-cp312-cp312-macosx_10_13_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ef/d1/6a5526d896ead68746997a95f0ae9077e5a438c1574ecb6ea031e72cb75b/ujson-6.0.0-cp312-cp312-macosx_10_13_x86_64.whl
       osx-arm64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_3.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/aiohappyeyeballs-2.7.1-pyhd8ed1ab_0.conda
@@ -295,10 +299,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py312h766f71e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yarl-1.24.5-py312h04c11ed_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
       - pypi: https://files.pythonhosted.org/packages/68/56/fbe81c09195924d8b7b8d4461a20458fe80a6a5ed6b24f0314da684277e1/pandas-3.0.5-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/84/b0/454f4a6aea48fd580eaaceb9d692cfa219b41e197c6bbfd534ee8945dad9/ujson-6.0.0-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/19/cc5bb2a3f2913d27d6dbb2c78d25921fabaedc6741d4a5a615a11f3c5bf3/numpy-2.5.1-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
@@ -384,9 +390,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yarl-1.24.5-py312h05f76fc_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
+      - pypi: https://files.pythonhosted.org/packages/30/32/03a2ad4b3c6ebddaee2dc157f8342a9147dbafba0817c3452252749b0478/ujson-6.0.0-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/65/66/53f31807a48a750f9d748da273bc3fcedd12b27ff1f3e373bfec55ef2dc0/numpy-2.5.1-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/70/b5/d2d3e9ae73362ba4229651b0ee1455cf78073a1ce585f6ff693782ce263e/pandas-3.0.5-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
@@ -475,9 +483,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.7.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
+      - pypi: https://files.pythonhosted.org/packages/09/be/4ddd61b3d4beb21eced10d0d100a4dca26f13303d4952e48fb5e89167869/ujson-6.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b8/a9/6e73d68500f80773f65f0654ea932019d6694329a0eb0ed0533de38df376/numpy-2.5.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
@@ -549,13 +559,15 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ukkonen-1.1.0-py312h0aa9c5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yaml-0.2.5-h4132b18_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yarl-1.24.5-py312heb39f77_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
       - pypi: https://files.pythonhosted.org/packages/1c/54/1dc810ea558d1320b597aa140a514f2fdf1d2ea09c38cf556f13ea712ec9/pandas-3.0.5-cp312-cp312-macosx_10_13_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/62/7b/14687aa674250e5e546f616f486b0d56d3631cd5b2415739141ce40bdcea/numpy-2.5.1-cp312-cp312-macosx_10_13_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ef/d1/6a5526d896ead68746997a95f0ae9077e5a438c1574ecb6ea031e72cb75b/ujson-6.0.0-cp312-cp312-macosx_10_13_x86_64.whl
       osx-arm64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_3.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/aiohappyeyeballs-2.7.1-pyhd8ed1ab_0.conda
@@ -624,10 +636,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py312h766f71e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yarl-1.24.5-py312h04c11ed_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
       - pypi: https://files.pythonhosted.org/packages/68/56/fbe81c09195924d8b7b8d4461a20458fe80a6a5ed6b24f0314da684277e1/pandas-3.0.5-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/84/b0/454f4a6aea48fd580eaaceb9d692cfa219b41e197c6bbfd534ee8945dad9/ujson-6.0.0-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/19/cc5bb2a3f2913d27d6dbb2c78d25921fabaedc6741d4a5a615a11f3c5bf3/numpy-2.5.1-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
@@ -699,9 +713,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yarl-1.24.5-py312h05f76fc_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
+      - pypi: https://files.pythonhosted.org/packages/30/32/03a2ad4b3c6ebddaee2dc157f8342a9147dbafba0817c3452252749b0478/ujson-6.0.0-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/65/66/53f31807a48a750f9d748da273bc3fcedd12b27ff1f3e373bfec55ef2dc0/numpy-2.5.1-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/70/b5/d2d3e9ae73362ba4229651b0ee1455cf78073a1ce585f6ff693782ce263e/pandas-3.0.5-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
@@ -790,9 +806,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2026c-h151e31d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.7.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
+      - pypi: https://files.pythonhosted.org/packages/09/be/4ddd61b3d4beb21eced10d0d100a4dca26f13303d4952e48fb5e89167869/ujson-6.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b8/a9/6e73d68500f80773f65f0654ea932019d6694329a0eb0ed0533de38df376/numpy-2.5.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
@@ -864,13 +882,15 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ukkonen-1.1.0-py312h0aa9c5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yaml-0.2.5-h4132b18_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yarl-1.24.5-py312heb39f77_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
       - pypi: https://files.pythonhosted.org/packages/1c/54/1dc810ea558d1320b597aa140a514f2fdf1d2ea09c38cf556f13ea712ec9/pandas-3.0.5-cp312-cp312-macosx_10_13_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/62/7b/14687aa674250e5e546f616f486b0d56d3631cd5b2415739141ce40bdcea/numpy-2.5.1-cp312-cp312-macosx_10_13_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ef/d1/6a5526d896ead68746997a95f0ae9077e5a438c1574ecb6ea031e72cb75b/ujson-6.0.0-cp312-cp312-macosx_10_13_x86_64.whl
       osx-arm64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_3.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/aiohappyeyeballs-2.7.1-pyhd8ed1ab_0.conda
@@ -939,10 +959,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py312h766f71e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yarl-1.24.5-py312h04c11ed_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
       - pypi: https://files.pythonhosted.org/packages/68/56/fbe81c09195924d8b7b8d4461a20458fe80a6a5ed6b24f0314da684277e1/pandas-3.0.5-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/84/b0/454f4a6aea48fd580eaaceb9d692cfa219b41e197c6bbfd534ee8945dad9/ujson-6.0.0-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/19/cc5bb2a3f2913d27d6dbb2c78d25921fabaedc6741d4a5a615a11f3c5bf3/numpy-2.5.1-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
@@ -1014,9 +1036,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yarl-1.24.5-py312h05f76fc_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
+      - pypi: https://files.pythonhosted.org/packages/30/32/03a2ad4b3c6ebddaee2dc157f8342a9147dbafba0817c3452252749b0478/ujson-6.0.0-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/65/66/53f31807a48a750f9d748da273bc3fcedd12b27ff1f3e373bfec55ef2dc0/numpy-2.5.1-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/70/b5/d2d3e9ae73362ba4229651b0ee1455cf78073a1ce585f6ff693782ce263e/pandas-3.0.5-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
@@ -1119,9 +1143,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-21.7.1-pyhcf101f3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/wheel-0.47.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/zipp-4.1.0-pyhcf101f3_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
+      - pypi: https://files.pythonhosted.org/packages/09/be/4ddd61b3d4beb21eced10d0d100a4dca26f13303d4952e48fb5e89167869/ujson-6.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/b8/a9/6e73d68500f80773f65f0654ea932019d6694329a0eb0ed0533de38df376/numpy-2.5.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
@@ -1207,13 +1233,15 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-64/ukkonen-1.1.0-py312h0aa9c5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yaml-0.2.5-h4132b18_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-64/yarl-1.24.5-py312heb39f77_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
       - pypi: https://files.pythonhosted.org/packages/1c/54/1dc810ea558d1320b597aa140a514f2fdf1d2ea09c38cf556f13ea712ec9/pandas-3.0.5-cp312-cp312-macosx_10_13_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/62/7b/14687aa674250e5e546f616f486b0d56d3631cd5b2415739141ce40bdcea/numpy-2.5.1-cp312-cp312-macosx_10_13_x86_64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+      - pypi: https://files.pythonhosted.org/packages/ef/d1/6a5526d896ead68746997a95f0ae9077e5a438c1574ecb6ea031e72cb75b/ujson-6.0.0-cp312-cp312-macosx_10_13_x86_64.whl
       osx-arm64:
       - conda: https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_3.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/aiohappyeyeballs-2.7.1-pyhd8ed1ab_0.conda
@@ -1296,10 +1324,12 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ukkonen-1.1.0-py312h766f71e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h925e9cb_3.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yarl-1.24.5-py312h04c11ed_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
       - pypi: https://files.pythonhosted.org/packages/68/56/fbe81c09195924d8b7b8d4461a20458fe80a6a5ed6b24f0314da684277e1/pandas-3.0.5-cp312-cp312-macosx_11_0_arm64.whl
+      - pypi: https://files.pythonhosted.org/packages/84/b0/454f4a6aea48fd580eaaceb9d692cfa219b41e197c6bbfd534ee8945dad9/ujson-6.0.0-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
       - pypi: https://files.pythonhosted.org/packages/e1/19/cc5bb2a3f2913d27d6dbb2c78d25921fabaedc6741d4a5a615a11f3c5bf3/numpy-2.5.1-cp312-cp312-macosx_11_0_arm64.whl
       - pypi: https://files.pythonhosted.org/packages/ec/57/56b9bcc3c9c6a792fcbaf139543cee77261f3651ca9da0c93f5c1221264b/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
@@ -1385,9 +1415,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.51.36247-habf1de7_41.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yaml-0.2.5-h6a83c73_3.conda
       - conda: https://conda.anaconda.org/conda-forge/win-64/yarl-1.24.5-py312h05f76fc_0.conda
-      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+      - pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
       - pypi: git+https://github.com/MementoRC/hb-logger.git?rev=06534b7708a13b4425a06dd154976db96c2c45be#06534b7708a13b4425a06dd154976db96c2c45be
-      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+      - pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+      - pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
+      - pypi: https://files.pythonhosted.org/packages/30/32/03a2ad4b3c6ebddaee2dc157f8342a9147dbafba0817c3452252749b0478/ujson-6.0.0-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/65/66/53f31807a48a750f9d748da273bc3fcedd12b27ff1f3e373bfec55ef2dc0/numpy-2.5.1-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/70/b5/d2d3e9ae73362ba4229651b0ee1455cf78073a1ce585f6ff693782ce263e/pandas-3.0.5-cp312-cp312-win_amd64.whl
       - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
@@ -1430,7 +1462,7 @@ packages:
   license: MIT AND Apache-2.0
   license_family: Apache
   purls:
-  - pkg:pypi/aiohttp?source=compressed-mapping
+  - pkg:pypi/aiohttp?source=hash-mapping
   run_exports: {}
   size: 1087577
   timestamp: 1784901629231
@@ -1495,7 +1527,7 @@ packages:
   - tomli
   license: Apache-2.0
   purls:
-  - pkg:pypi/coverage?source=compressed-mapping
+  - pkg:pypi/coverage?source=hash-mapping
   run_exports: {}
   size: 396261
   timestamp: 1785711789414
@@ -1740,7 +1772,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/mypy?source=compressed-mapping
+  - pkg:pypi/mypy?source=hash-mapping
   run_exports: {}
   size: 22849418
   timestamp: 1783986235162
@@ -1783,7 +1815,7 @@ packages:
   license: Apache-2.0
   license_family: APACHE
   purls:
-  - pkg:pypi/propcache?source=compressed-mapping
+  - pkg:pypi/propcache?source=hash-mapping
   run_exports: {}
   size: 51586
   timestamp: 1780037816755
@@ -1845,7 +1877,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/librt?source=compressed-mapping
+  - pkg:pypi/librt?source=hash-mapping
   run_exports: {}
   size: 164702
   timestamp: 1783529463492
@@ -1959,7 +1991,7 @@ packages:
   license: Apache-2.0
   license_family: Apache
   purls:
-  - pkg:pypi/yarl?source=compressed-mapping
+  - pkg:pypi/yarl?source=hash-mapping
   run_exports: {}
   size: 171280
   timestamp: 1784526501141
@@ -1997,7 +2029,7 @@ packages:
   license: PSF-2.0
   license_family: PSF
   purls:
-  - pkg:pypi/aiohappyeyeballs?source=compressed-mapping
+  - pkg:pypi/aiohappyeyeballs?source=hash-mapping
   run_exports: {}
   size: 24690
   timestamp: 1782986823268
@@ -2139,7 +2171,7 @@ packages:
   license: Apache-2.0
   license_family: APACHE
   purls:
-  - pkg:pypi/distlib?source=compressed-mapping
+  - pkg:pypi/distlib?source=hash-mapping
   run_exports: {}
   size: 303705
   timestamp: 1781320269259
@@ -2175,7 +2207,7 @@ packages:
   - python >=3.10
   license: Unlicense
   purls:
-  - pkg:pypi/filelock?source=compressed-mapping
+  - pkg:pypi/filelock?source=hash-mapping
   run_exports: {}
   size: 77939
   timestamp: 1785376409053
@@ -2202,7 +2234,7 @@ packages:
   license: BSD-3-Clause
   license_family: BSD
   purls:
-  - pkg:pypi/gitpython?source=compressed-mapping
+  - pkg:pypi/gitpython?source=hash-mapping
   run_exports: {}
   size: 165604
   timestamp: 1785074931101
@@ -2221,7 +2253,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/hatchling?source=compressed-mapping
+  - pkg:pypi/hatchling?source=hash-mapping
   run_exports: {}
   size: 62024
   timestamp: 1783514388419
@@ -2247,7 +2279,7 @@ packages:
   license: BSD-3-Clause
   license_family: BSD
   purls:
-  - pkg:pypi/idna?source=compressed-mapping
+  - pkg:pypi/idna?source=hash-mapping
   run_exports: {}
   size: 163869
   timestamp: 1781620148226
@@ -2261,7 +2293,7 @@ packages:
   license: Apache-2.0
   license_family: APACHE
   purls:
-  - pkg:pypi/importlib-metadata?source=compressed-mapping
+  - pkg:pypi/importlib-metadata?source=hash-mapping
   run_exports: {}
   size: 34766
   timestamp: 1779714582554
@@ -2376,7 +2408,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/pip?source=compressed-mapping
+  - pkg:pypi/pip?source=hash-mapping
   run_exports: {}
   size: 1198702
   timestamp: 1785420941138
@@ -2389,7 +2421,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/platformdirs?source=compressed-mapping
+  - pkg:pypi/platformdirs?source=hash-mapping
   run_exports: {}
   size: 26632
   timestamp: 1784661349391
@@ -2419,7 +2451,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/pre-commit?source=compressed-mapping
+  - pkg:pypi/pre-commit?source=hash-mapping
   run_exports: {}
   size: 202254
   timestamp: 1784706397465
@@ -2432,7 +2464,7 @@ packages:
   license: BSD-3-Clause
   license_family: BSD
   purls:
-  - pkg:pypi/pycparser?source=compressed-mapping
+  - pkg:pypi/pycparser?source=hash-mapping
   run_exports: {}
   size: 55886
   timestamp: 1779293633166
@@ -2466,7 +2498,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/pytest?source=compressed-mapping
+  - pkg:pypi/pytest?source=hash-mapping
   run_exports: {}
   size: 306724
   timestamp: 1782127176429
@@ -2525,7 +2557,7 @@ packages:
   - python
   license: MIT
   purls:
-  - pkg:pypi/python-discovery?source=compressed-mapping
+  - pkg:pypi/python-discovery?source=hash-mapping
   run_exports: {}
   size: 37229
   timestamp: 1785577890125
@@ -2576,7 +2608,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/setuptools?source=compressed-mapping
+  - pkg:pypi/setuptools?source=hash-mapping
   run_exports: {}
   size: 642081
   timestamp: 1783619174976
@@ -2667,7 +2699,7 @@ packages:
   - python
   license: MIT
   purls:
-  - pkg:pypi/virtualenv?source=compressed-mapping
+  - pkg:pypi/virtualenv?source=hash-mapping
   run_exports: {}
   size: 3742229
   timestamp: 1785500010854
@@ -2693,7 +2725,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/zipp?source=compressed-mapping
+  - pkg:pypi/zipp?source=hash-mapping
   run_exports: {}
   size: 24190
   timestamp: 1779159948016
@@ -2776,7 +2808,7 @@ packages:
   - tomli
   license: Apache-2.0
   purls:
-  - pkg:pypi/coverage?source=compressed-mapping
+  - pkg:pypi/coverage?source=hash-mapping
   run_exports: {}
   size: 393958
   timestamp: 1785712107221
@@ -3126,7 +3158,7 @@ packages:
   license: MIT AND Apache-2.0
   license_family: Apache
   purls:
-  - pkg:pypi/aiohttp?source=compressed-mapping
+  - pkg:pypi/aiohttp?source=hash-mapping
   run_exports: {}
   size: 1056533
   timestamp: 1784900997123
@@ -3189,7 +3221,7 @@ packages:
   - tomli
   license: Apache-2.0
   purls:
-  - pkg:pypi/coverage?source=compressed-mapping
+  - pkg:pypi/coverage?source=hash-mapping
   run_exports: {}
   size: 394478
   timestamp: 1785712133353
@@ -3538,7 +3570,7 @@ packages:
   license: Apache-2.0
   license_family: Apache
   purls:
-  - pkg:pypi/yarl?source=compressed-mapping
+  - pkg:pypi/yarl?source=hash-mapping
   run_exports: {}
   size: 162947
   timestamp: 1784526855958
@@ -3562,7 +3594,7 @@ packages:
   license: MIT AND Apache-2.0
   license_family: Apache
   purls:
-  - pkg:pypi/aiohttp?source=compressed-mapping
+  - pkg:pypi/aiohttp?source=hash-mapping
   run_exports: {}
   size: 1033675
   timestamp: 1784900600588
@@ -3612,7 +3644,7 @@ packages:
   license: MIT
   license_family: MIT
   purls:
-  - pkg:pypi/cffi?source=compressed-mapping
+  - pkg:pypi/cffi?source=hash-mapping
   run_exports: {}
   size: 344466
   timestamp: 1783424278847
@@ -3628,7 +3660,7 @@ packages:
   - vc14_runtime >=14.44.35208
   license: Apache-2.0
   purls:
-  - pkg:pypi/coverage?source=compressed-mapping
+  - pkg:pypi/coverage?source=hash-mapping
   run_exports: {}
   size: 421219
   timestamp: 1785711745796
@@ -3791,7 +3823,7 @@ packages:
   license: Apache-2.0
   license_family: APACHE
   purls:
-  - pkg:pypi/propcache?source=compressed-mapping
+  - pkg:pypi/propcache?source=hash-mapping
   run_exports: {}
   size: 49101
   timestamp: 1780037831647
@@ -4008,7 +4040,7 @@ packages:
   run_exports: {}
   size: 168243
   timestamp: 1784526541105
-- pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=e5a411e1ce9bb75191b30bc761e0306b19fabdda#e5a411e1ce9bb75191b30bc761e0306b19fabdda
+- pypi: git+https://github.com/MementoRC/hb-async-utils.git?rev=v0.1.0#e5a411e1ce9bb75191b30bc761e0306b19fabdda
   name: hb-async-utils
   version: 0.1.0
   requires_dist:
@@ -4033,12 +4065,17 @@ packages:
   - pytest>=9.0.3 ; extra == 'dev'
   - ruff>=0.15.10 ; extra == 'dev'
   requires_python: '>=3.12'
-- pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=9eae358291063551a6cb2ad7c93059ee7f1aca48#9eae358291063551a6cb2ad7c93059ee7f1aca48
+- pypi: git+https://github.com/MementoRC/hb-rate-limit.git?rev=31fb35d255c9a93f4fc6f30fb0a65597dff23d58#31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+  name: hb-rate-limit
+  version: 0.4.1
+  requires_python: '>=3.12'
+- pypi: git+https://github.com/MementoRC/hb-web-assistant.git?rev=v0.1.0#d5a29e7d39835483389f245713c3ea98ebfda452
   name: hb-web-assistant
   version: 0.1.0
   requires_dist:
   - aiohttp
-  - hb-logger @ git+https://github.com/MementoRC/hb-logger.git@06534b7708a13b4425a06dd154976db96c2c45be
+  - hb-rate-limit @ git+https://github.com/MementoRC/hb-rate-limit.git@31fb35d255c9a93f4fc6f30fb0a65597dff23d58
+  - ujson
   - mypy>=1.20.0 ; extra == 'dev'
   - pytest-asyncio>=0.21.0 ; extra == 'dev'
   - pytest-cov>=7.1.0 ; extra == 'dev'
@@ -4046,6 +4083,11 @@ packages:
   - pytest>=9.0.3 ; extra == 'dev'
   - ruff>=0.15.10 ; extra == 'dev'
   requires_python: '>=3.12'
+- pypi: https://files.pythonhosted.org/packages/09/be/4ddd61b3d4beb21eced10d0d100a4dca26f13303d4952e48fb5e89167869/ujson-6.0.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
+  name: ujson
+  version: 6.0.0
+  sha256: e9359bfd0efd12593f0db40ccb2d1497284401da207f1d6a1783718313201b21
+  requires_python: '>=3.10'
 - pypi: https://files.pythonhosted.org/packages/12/98/e976540c1addf70442be7842a18cf70884a964abbf69442504f4d2939989/pandas-3.0.5-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl
   name: pandas
   version: 3.0.5
@@ -4226,6 +4268,11 @@ packages:
   - xlsxwriter>=3.2.0 ; extra == 'all'
   - zstandard>=0.23.0 ; extra == 'all'
   requires_python: '>=3.11'
+- pypi: https://files.pythonhosted.org/packages/30/32/03a2ad4b3c6ebddaee2dc157f8342a9147dbafba0817c3452252749b0478/ujson-6.0.0-cp312-cp312-win_amd64.whl
+  name: ujson
+  version: 6.0.0
+  sha256: 8cd9f7203c0b2aaed66809edf7e66aa3ab0fe3402e87b69a43b9dfd8d33125ab
+  requires_python: '>=3.10'
 - pypi: https://files.pythonhosted.org/packages/62/7b/14687aa674250e5e546f616f486b0d56d3631cd5b2415739141ce40bdcea/numpy-2.5.1-cp312-cp312-macosx_10_13_x86_64.whl
   name: numpy
   version: 2.5.1
@@ -4416,6 +4463,11 @@ packages:
   - xlsxwriter>=3.2.0 ; extra == 'all'
   - zstandard>=0.23.0 ; extra == 'all'
   requires_python: '>=3.11'
+- pypi: https://files.pythonhosted.org/packages/84/b0/454f4a6aea48fd580eaaceb9d692cfa219b41e197c6bbfd534ee8945dad9/ujson-6.0.0-cp312-cp312-macosx_11_0_arm64.whl
+  name: ujson
+  version: 6.0.0
+  sha256: b305657e2ddc29a50b333053e7c7f431a8c24c92b7dcbbf7a420f2330152b486
+  requires_python: '>=3.10'
 - pypi: https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl
   name: six
   version: 1.17.0
@@ -4443,3 +4495,8 @@ packages:
   requires_dist:
   - six>=1.5
   requires_python: '>=2.7,!=3.0.*,!=3.1.*,!=3.2.*'
+- pypi: https://files.pythonhosted.org/packages/ef/d1/6a5526d896ead68746997a95f0ae9077e5a438c1574ecb6ea031e72cb75b/ujson-6.0.0-cp312-cp312-macosx_10_13_x86_64.whl
+  name: ujson
+  version: 6.0.0
+  sha256: 02148bd4706f42b063bb95f6cc309e16554fb4c250db4683688c0a3eb83048ad
+  requires_python: '>=3.10'
