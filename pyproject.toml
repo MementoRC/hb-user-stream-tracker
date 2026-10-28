@@ -125,7 +125,7 @@ format = "ruff format user_stream_tracker tests"
 format-check = "ruff format --check user_stream_tracker tests"
 typecheck = "mypy user_stream_tracker"
 build = "hatchling build"
-quality = { depends-on = ["lint", "format-check"] }
+quality = { depends-on = ["lint", "format-check", "typecheck"] }
 check = { depends-on = ["quality", "typecheck", "coverage"] }
 
 [tool.hummingbot.supersedes]
