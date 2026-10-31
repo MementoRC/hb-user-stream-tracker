@@ -7,10 +7,9 @@ from __future__ import annotations
 
 import asyncio
 import contextlib
-import logging
 from typing import TYPE_CHECKING, Any
 
-from user_stream_tracker.hb_compat import safe_ensure_future, safe_gather
+from user_stream_tracker.hb_compat import get_logger, safe_ensure_future, safe_gather
 
 if TYPE_CHECKING:
     from user_stream_tracker.data_source import UserStreamTrackerDataSource
@@ -23,7 +22,7 @@ class UserStreamTracker:
     @classmethod
     def logger(cls) -> HummingbotLogger:
         if cls._ust_logger is None:
-            cls._ust_logger = logging.getLogger(__name__)
+            cls._ust_logger = get_logger(__name__)
         return cls._ust_logger
 
     def __init__(self, data_source: UserStreamTrackerDataSource) -> None:

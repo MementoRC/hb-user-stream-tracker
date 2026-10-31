@@ -7,12 +7,11 @@ from __future__ import annotations
 
 import asyncio
 import contextlib
-import logging
 import time
 from abc import ABCMeta
 from typing import TYPE_CHECKING, Any
 
-from user_stream_tracker.hb_compat import HummingbotLogger
+from user_stream_tracker.hb_compat import HummingbotLogger, get_logger
 
 if TYPE_CHECKING:
     from user_stream_tracker.hb_compat import WSAssistant
@@ -28,7 +27,7 @@ class UserStreamTrackerDataSource(metaclass=ABCMeta):  # noqa: B024
     @classmethod
     def logger(cls) -> HummingbotLogger:
         if cls._logger is None:
-            cls._logger = logging.getLogger(HummingbotLogger.logger_name_for_class(cls))
+            cls._logger = get_logger(HummingbotLogger.logger_name_for_class(cls))
         return cls._logger
 
     @property
