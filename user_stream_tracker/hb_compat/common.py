@@ -9,8 +9,9 @@ Group D).
 from __future__ import annotations
 
 import logging
+from typing import cast
 
-from logger import HummingbotLogger  # type: ignore[import-untyped]
+from logger import HummingbotLogger
 
 __all__ = ["HummingbotLogger", "get_logger"]
 
@@ -24,4 +25,4 @@ def get_logger(name: str) -> HummingbotLogger:
     sites an explicit, correctly-typed entry point instead of reaching into
     ``logging`` (and the external ``logger`` package) directly.
     """
-    return logging.getLogger(name)
+    return cast("HummingbotLogger", logging.getLogger(name))
