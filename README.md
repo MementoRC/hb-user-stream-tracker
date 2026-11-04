@@ -44,9 +44,6 @@ cd hb-user-stream-tracker
 # Pixi (recommended)
 pixi install
 pixi run test
-
-# pip
-pip install -e .
 ```
 
 ## Project Structure
