@@ -34,6 +34,12 @@ type = "forbidden"
 source_modules = ["user_stream_tracker"]
 forbidden_modules = ["hummingbot"]
 
+[[tool.importlinter.contracts]]
+name = "user_stream_tracker (L2) never imports other L2 packages (ADR 0001 amendment-1)"
+type = "forbidden"
+source_modules = ["user_stream_tracker"]
+forbidden_modules = ["candles_feed", "liquidations_feed", "rate_oracle", "market_data", "market_connector", "market_simulator", "remote_iface", "strategy_framework", "order_book"]
+
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"

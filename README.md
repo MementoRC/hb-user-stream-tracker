@@ -9,6 +9,8 @@ User stream tracking abstractions for Hummingbot, extracted from
 `hummingbot.core.data_type.user_stream_tracker` and the private user-stream-tracker
 implementations duplicated across exchange connectors.
 
+**Layer:** L2 (domain) per ADR 0001 amendment-1. May depend on L0 (hb-logger, hb-async-utils) and L1 (hb-web-assistant). Must not import other L2 packages or `hummingbot`; enforced by import-linter (`pixi run lint-boundaries`).
+
 ## Overview
 
 This package will provide the private-channel (user-stream) WebSocket tracking abstractions
