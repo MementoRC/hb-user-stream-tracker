@@ -54,7 +54,7 @@ pixi run test
 hb-user-stream-tracker/
 ├── user_stream_tracker/         # Package source
 │   ├── __init__.py              # Package exports
-│   ├── __about__.py             # Version: "0.1.0"
+│   ├── __about__.py             # Package version (managed by release-please)
 │   └── base.py                  # UserStreamTrackerBase scaffold placeholder
 ├── tests/                       # Test suite
 │   ├── __init__.py
