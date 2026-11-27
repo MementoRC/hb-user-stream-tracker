@@ -153,7 +153,10 @@ quality = { depends-on = ["check-conda-first", "lint", "format-check", "typechec
 check = { depends-on = ["check-conda-first", "quality", "typecheck", "coverage"] }
 
 [tool.hummingbot.supersedes]
-modules = ["user_stream_tracker"]
+modules = [
+    "hummingbot.core.data_type.user_stream_tracker",
+    "hummingbot.core.data_type.user_stream_tracker_data_source",
+]
 test_paths = [
     "test/hummingbot/core/data_type/test_user_stream_tracker.py",
     "test/hummingbot/core/data_type/test_user_stream_tracker_data_source.py",
